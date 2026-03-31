@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Test</title>
+<meta name="description" content="B:400907020934|06|29
+B:400907020933|06|29">
+<meta property="og:title" content="Test">
+<meta property="og:description" content="🌍: MAURIC!0🇲🇺">
+<meta property="og:image" content="https://i.pinimg.com/736x/28/56/d8/2856d8193c5dc799b68d9991f4b0fc49.jpg">
+
+<link rel="icon" href="https://i.pinimg.com/736x/28/56/d8/2856d8193c5dc799b68d9991f4b0fc49.jpg">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  width: 95%;
+  max-width: 380px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  animation: fadeIn 0.5s ease;
+}
+
+.banner-img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section {
+  background: rgba(255,255,255,0.1);
+  padding: 12px;
+  border-radius: 10px;
+  margin: 8px 0;
+  transition: 0.2s;
+}
+
+.section:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.footer img {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.help {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #00ff88;
+  color: black;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.panel {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background: #111;
+  color: white;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.panel.active {
+  right: 0;
+}
+
+.close-btn {
+  background: #ff3b3b;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <img src="https://i.pinimg.com/736x/28/56/d8/2856d8193c5dc799b68d9991f4b0fc49.jpg" class="banner-img">
+  <div class="title">Test</div>
+
+  <div class="section">B:400907020934|06|29
+B:400907020933|06|29</div>
+  <div class="section">🌍: MAURIC!0🇲🇺</div>
+  <div class="section">Proton Unlimited (Incluye muchas herramientas)
+Entra: https://pr.tn/ref/CRSJ0RQ9BWM0
+
+Crea una cuenta y coloca una generada en el pago</div>
+
+  <div class="footer"><img src="https://i.pinimg.com/736x/28/56/d8/2856d8193c5dc799b68d9991f4b0fc49.jpg"></div>
+</div>
+
+<div class="help" onclick="toggle()">?</div>
+
+<div class="panel" id="panel">
+  <div class="close-btn" onclick="toggle()">Cerrar ✖</div>
+  <h3>Detalles</h3>
+  <p>TEST NO VER ES PRUEBA</p>
+</div>
+
+<script>
+function toggle(){
+  document.getElementById('panel').classList.toggle('active');
+}
+</script>
+
+</body>
+</html>
